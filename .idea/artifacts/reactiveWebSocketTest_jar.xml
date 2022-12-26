@@ -1,0 +1,74 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="reactiveWebSocketTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/reactiveWebSocketTest_jar</output-path>
+    <root id="archive" name="reactiveWebSocketTest.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="reactiveWebSocketTest.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.24/175a2157fce17669af6d4db1d094cb4baaa5c8fd/spring-tx-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.85.Final/a9c22785e2a4301f523cc9711b387f38a19d8bb2/netty-transport-native-unix-common-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.7.6/77017e2aa78224c3fa10444d659c2ce8765b910/spring-boot-starter-json-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.85.Final/fcc615fbf8692a815448f21804b559e5c0ffbb74/netty-handler-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.30/8fde7fe2586328ac3c68db92045e1c8759125000/snakeyaml-1.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.24/e487ea6de09b9a7c36548028feeafa511a593532/spring-beans-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/5.3.24/d8a79e756fd453c87beafc8445af4a5561b39f40/spring-webflux-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.7.6/ec920cd7f951f3cff3a0b7af80bb8f7116a3d8a5/spring-boot-starter-tomcat-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.11/4741689214e9d1e8408b206506cbe76d1c6a7d60/logback-classic-1.2.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.24/2b30878663ceed2af07238dc54e92e5bf001438d/spring-jcl-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.7.6/23061de1832242610092f212f99d49b9a4955a9d/spring-boot-starter-aop-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.85.Final/ca55790d7c66ac1a4ddd204d98c2a872187a052/netty-buffer-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.7.6/f96f89eba708a591704db5dcbfc03e8822a503aa/spring-boot-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-core/1.0.25/fc3b7713a4bfcf413b1be552d292320de0d61883/reactor-netty-core-1.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.24/d095c329f30baf2b6d44eccbd2352d7a2f840c72/spring-core-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-integration/2.7.6/fa86d3719ad6924f62772250089264d4d7933c55/spring-boot-starter-integration-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.85.Final/14a0c958ee311baf010a1617d1fbf02c77f7bfd2/netty-common-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.36/ed46d81cef9c412a88caef405b58f93a678ff2ca/jul-to-slf4j-1.7.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.4/3864a1320d97d7b045f729a326e1e077661f31b7/reactive-streams-1.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.2/f42d6afa111b4dec5d2aea0fe2197240749a4ea6/log4j-api-2.17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.85.Final/378f863e27848f1e7e2eba2c63dc7f8f3395bd0d/netty-handler-proxy-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.2/17dd0fae2747d9a28c67bc9534108823d2376b46/log4j-to-slf4j-2.17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.11/a01230df5ca5c34540cdaa3ad5efb012f1f1f792/logback-core-1.2.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-webflux/2.7.6/aef2ed0bad997b966f5758689ecc47204c7994e7/spring-boot-starter-webflux-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.69/27f2530eba96238aca56593bbd98edfdb038d9ef/tomcat-embed-core-9.0.69.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.69/9c89a289c35b9ec20bdfb692a22dab87256bbe67/tomcat-embed-el-9.0.69.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-http/1.0.25/cf4ad33ed1b51c48a1e1b183a0889dffcdaece07/reactor-netty-http-1.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.85.Final/25203ce1ab68f165b4dce4533102418b49644d91/netty-codec-http2-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.24/ae7410418e7b4bd27a01e3fb1c2fed35b2bc1e84/spring-expression-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.4/e6d820112871f33cd94a1dcc54eef58874753b5/jackson-datatype-jsr310-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.85.Final/5718ab476d588be5e7bea537dad659239886932d/netty-codec-socks-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.4/557dbba5d8dfc7b7f944c58fe084109afcb5670b/jackson-datatype-jdk8-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.4.2/325c06bdfeb628cfb80ebaaf1a26cc1eb558a585/jackson-databind-2.13.4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.4/858ccf6624b5fac6044813e845063edb6a62cf37/jackson-module-parameter-names-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.24/e48634d7b8f40d4d0fe978830be0247bfc2ff2cd/spring-context-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.24/efd01bc1048a2e1b6a7442fbd78170bc02c342b7/spring-aop-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.24/33d2187c2bf1cb2c222bd1cc18b618736babcf3d/spring-webmvc-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.4/cf934c681294b97ef6d80082faeefbe1edadf56/jackson-core-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns-native-macos/4.1.85.Final/a19de9939d4246fc9bf10c0869ecf8030da6f82d/netty-resolver-dns-native-macos-4.1.85.Final-osx-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.7.6/d15341c0fc0b1d1362ce6c737b34679ad1f836c/spring-boot-starter-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.7.6/9d0166a0390df593243bdc798ca7a1db20ddea9c/spring-boot-starter-web-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-core/5.5.15/929e8ee79c06349c452539d0e2364f98307cac34/spring-integration-core-5.5.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.85.Final/434da27cbcc74ccdb8033e53242a2fa14de0c494/netty-transport-native-epoll-4.1.85.Final-linux-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-reactor-netty/2.7.6/d388c66a0afb9d6c84f763cbd7993b31d9956a8a/spring-boot-starter-reactor-netty-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.24/d89bbcaabb1ff247a089875cbc4211bfe96c9a59/spring-web-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.85.Final/9167d32a249ea98b6d7fe33faf21809fee9dc298/netty-codec-http-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.7/158f5c255cd3e4408e795b79f7c3fbae9b53b7ca/aspectjweaver-1.9.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.3.4/4262d75536b193ea70bd3e854155462623d180a5/spring-retry-1.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.85.Final/30f7d8d759689a8aa5d5e8202aec0e795e0847e7/netty-resolver-dns-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.85.Final/aeb5a1de291ac21b9f8d03fa5aa201d109c16d02/netty-resolver-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.85.Final/984ce1da2711ec38037bf7d97d98a0ddae38e02b/netty-codec-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.85.Final/8fa9329620accf9ebef76a805cdd1e35cfd8b859/netty-transport-classes-epoll-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.3.24/62577a956a4fa4f5d6a2d6ee645ad65295a8bd7a/spring-messaging-5.3.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.69/c5da77c17a667b4e7a6bb01fb3b28c46c2717123/tomcat-embed-websocket-9.0.69.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns-classes-macos/4.1.85.Final/aa9c23bcfba9aae7aeeb02c99079fdb6261fe1ff/netty-resolver-dns-classes-macos-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.4/858c6cc78e1f08a885b1613e1d817c829df70a6e/jackson-annotations-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.7.6/33a2d9e08d33a6a6f8051ed38daac14046e2f97c/spring-boot-starter-logging-2.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.85.Final/2c30699dd565568303847d87c89f76a01e5cc8ee/netty-transport-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.85.Final/87b294b6814807fb22f441a872ae268e619d94af/netty-codec-dns-4.1.85.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.4.25/7bea7c9baa35b42f95c5712c2d0efa73512ba420/reactor-core-3.4.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.7.6/4ad7e89accd25c69bfe84f52202deaf09430be2/spring-boot-autoconfigure-2.7.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
