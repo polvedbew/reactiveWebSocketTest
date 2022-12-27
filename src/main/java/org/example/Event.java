@@ -35,4 +35,5 @@ public class Event {
     public  String locationAccuracy= "";
     public  String bearing = "";
 
+
 }
