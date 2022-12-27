@@ -19,5 +19,11 @@ public class Event {
     public String bearing;
     public boolean isLocationFine;
 
+    public  int at_seconds_utc = 0;
+    public  int at_minutes_utc = 0;
+    public  int at_hours_utc = 0;
+    public  int at_day_utc = 0;
+    public  int at_month_utc = 0;
+    public  int at_year_utc = 0;
 
 }

@@ -39,7 +39,13 @@ public class testController {
             //ObjectMapper mapper = new ObjectMapper();
             //String json = mapper.writeValueAsString(lo);
             try {
-                String json = "{ \"info\":\""+ event.by_name+"\" ,  \"title\":\"" + name + "\" , \"position\":{ \"lat\": " + Double.parseDouble(event.latitude) + ", \"lng\": " + Double.parseDouble(event.longitude) + " }}";
+                String json = "{ \"info\":\""+  "\n"
+                        +"Received time: "+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
+                        +"Received from: "+event.by_name
+                        +"Speed: "+event.speed
+                        +"Direction: "+event.bearing
+                        +"Gps time: "+event.gpsTime
+                        +"\" ,  \"title\":\"" + name + "\" , \"position\":{ \"lat\": " + Double.parseDouble(event.latitude) + ", \"lng\": " + Double.parseDouble(event.longitude) + " }}";
                 // json="\"{ lat: -25.363, lng: 131.044 }\"";
 
                 try{
