@@ -11,8 +11,8 @@ public class MapEvent {
 
     public String info;
     public String title;
-    double lat;
-    double lng;
+    public double lat;
+    public double lng;
 
     public MapEvent(String info,String title,double lat,double lng){
         this.info=info;
