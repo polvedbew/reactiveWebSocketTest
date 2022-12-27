@@ -19,7 +19,7 @@ public class testController {
     private SinkService sinkService;
 
     @Autowired
-    public ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;
     public testController(SinkService sinkService){
         this.sinkService=sinkService;
     }
@@ -44,15 +44,15 @@ public class testController {
             //ObjectMapper mapper = new ObjectMapper();
             //String json = mapper.writeValueAsString(lo);
             try {
-                MapEvent me=new MapEvent("Received time: "//+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
-                      //  +"\nReceived from: "+event.by_name
-                      //  +"\nSpeed: "+event.speed
-                     //   +"\nDirection: "+event.bearing
-                     //   +"\nGps time: "+event.gpsTime
+                MapEvent me=new MapEvent("Received time: "+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
+                        +"\nReceived from: "+event.by_name
+                        +"\nSpeed: "+event.speed
+                        +"\nDirection: "+event.bearing
+                        +"\nGps time: "+event.gpsTime
                         , name
                         , Double.parseDouble(event.latitude)
                         ,Double.parseDouble(event.longitude));
-                String json= objectMapper.writeValueAsString(me);
+                String json= objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(me);
 
                 try{
                     sinkService.emitToSink(json);

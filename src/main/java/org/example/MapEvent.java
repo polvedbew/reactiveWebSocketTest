@@ -1,6 +1,5 @@
 package org.example;
 
-import reactor.core.publisher.Sinks;
 
 /**
  * ----------------------*    Norden Communication    *-------------------------
@@ -22,12 +21,4 @@ public class MapEvent {
 
 }
 
-class Position{
-    double lat;
-    double lng;
-    public Position(double lat,double lng){
-        this.lat=lat;
-        this.lng=lng;
-    }
 
-}
