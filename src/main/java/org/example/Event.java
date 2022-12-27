@@ -8,6 +8,7 @@ package org.example;
  **/
 public class Event {
 
+    public String by_name;
     public String latitude;
     public String longitude;
     public String altitude;

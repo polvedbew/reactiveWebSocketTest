@@ -39,16 +39,16 @@ public class testController {
             //ObjectMapper mapper = new ObjectMapper();
             //String json = mapper.writeValueAsString(lo);
             try {
-                String json = "{ \"title\":\"" + name + "\" , \"position\":{ \"lat\": " + Double.parseDouble(event.latitude) + ", \"lng\": " + Double.parseDouble(event.longitude) + " }}";
+                String json = "{ \"info\":\""+ event.by_name+"\" ,  \"title\":\"" + name + "\" , \"position\":{ \"lat\": " + Double.parseDouble(event.latitude) + ", \"lng\": " + Double.parseDouble(event.longitude) + " }}";
                 // json="\"{ lat: -25.363, lng: 131.044 }\"";
 
                 try{
                     sinkService.emitToSink(json);
                 }catch (Exception ee){
-                    //
+                    ee.printStackTrace();
                 }
             }catch (Exception e){
-
+                e.printStackTrace();
             }
         }catch (Exception e){
             e.printStackTrace();
