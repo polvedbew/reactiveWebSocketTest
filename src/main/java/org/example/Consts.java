@@ -8,7 +8,7 @@ package org.example;
  **/
 public class Consts {
 
-    public static final  String HTML_CLIENT= " <!DOCTYPE html>\n" +
+    public static final  String HTML_CLIENT= "  <!DOCTYPE html>\n" +
             "<html>\n" +
             "\t<body>\n" +
             "\n" +
@@ -32,7 +32,7 @@ public class Consts {
             "\t\t   var markerMapData= new Map();\n" +
             "\t\t   \n" +
             "\n" +
-            "\t\t   function addMarker(lat,lng,title) {\n" +
+            "\t\t   function addMarker(lat,lng,title,info) {\n" +
             "\t\t\tevents(\"add marker data:\"+lat+\"  ---  \"+lng+\"    \"+title);\n" +
             "\t\t\tvar idSpec=\"lt\"+lat+\"ln\"+lng+\"tt\"+title\n" +
             "\n" +
@@ -52,6 +52,21 @@ public class Consts {
             "\t\t\t\t\t\t\t    className: \"map-label\"\n" +
             "\t\t\t\t\t\t      }\n" +
             "\t\t\t\t\t}));\n" +
+            "\t\t\t\tmap.setCenter(new google.maps.LatLng(lat,lng));\n" +
+            "\t\t\t\tmap.setZoom(12);\n" +
+            "\t\t\t\tconst infowindow = new google.maps.InfoWindow({\n" +
+            "\t\t\t\t\t\t    content: info,\n" +
+            "\t\t\t\t\t\t    ariaLabel: \"Secnor\"\n" +
+            "\t\t\t\t\t\t  });\n" +
+            "\n" +
+            "\n" +
+            "\t\t\t\tmarkerMapData.get(idSpec).addListener(\"click\", () => {\n" +
+            "\t\t\t\t    infowindow.open({\n" +
+            "\t\t\t\t      anchor: markerMapData.get(idSpec),\n" +
+            "\t\t\t\t      map,\n" +
+            "\t\t\t\t    });\n" +
+            "\t\t\t\t  });\n" +
+            "\n" +
             "\n" +
             "\t\t\t}\n" +
             "\n" +
@@ -64,7 +79,7 @@ public class Consts {
             "\n" +
             "\n" +
             "\n" +
-            "\t\t    var clientWebSocket = new WebSocket(\"ws://103.214.234.248:54321/event-emitter\");\n" +
+            "\t\t    var clientWebSocket = new WebSocket(\"ws://nordencommunications.org:54321/event-emitter\");\n" +
             "\n" +
             "\t\t    clientWebSocket.onopen = function() {\n" +
             "\t\t\tconsole.log(\"clientWebSocket.onopen\", clientWebSocket);\n" +
@@ -88,7 +103,7 @@ public class Consts {
             "\t\t\t\t//var position = new google.maps.LatLng(loc.data.lat,loc.data.lng); \n" +
             "\t\t\t\t//var myLatLng = new google.maps.LatLng(parseFloat(loc.data.substring(1,6)),131.044922);\n" +
             "\n" +
-            "\t\t\t\taddMarker(obj.position.lat,obj.position.lng,obj.title);\n" +
+            "\t\t\t\taddMarker(obj.lat,obj.lng,obj.title,obj.info);\n" +
             "\n" +
             "\t\t\tconsole.log(\"clientWebSocket.onmessage\", clientWebSocket, loc);\n" +
             "\t\t\tevents(loc.data +\"  ------  \" +loc.data.position);\n" +
