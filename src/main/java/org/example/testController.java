@@ -1,6 +1,7 @@
 package org.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class testController {
     private SinkService sinkService;
-    private ObjectMapper objectMapper=new ObjectMapper();
+
+    @Autowired
+    private ObjectMapper objectMapper;
     public testController(SinkService sinkService){
         this.sinkService=sinkService;
     }
@@ -41,15 +44,15 @@ public class testController {
             //ObjectMapper mapper = new ObjectMapper();
             //String json = mapper.writeValueAsString(lo);
             try {
-                MapEvent me=new MapEvent("Received time: "+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
-                        +"\\nReceived from: "+event.by_name
-                        +"\\nSpeed: "+event.speed
-                        +"\\nDirection: "+event.bearing
-                        +"\\nGps time: "+event.gpsTime
+                MapEvent me=new MapEvent("Received time: "//+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
+                      //  +"\nReceived from: "+event.by_name
+                      //  +"\nSpeed: "+event.speed
+                     //   +"\nDirection: "+event.bearing
+                     //   +"\nGps time: "+event.gpsTime
                         , name
                         , Double.parseDouble(event.latitude)
                         ,Double.parseDouble(event.longitude));
-                String json= objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(me);
+                String json= objectMapper.writeValueAsString(me);
 
                 try{
                     sinkService.emitToSink(json);
