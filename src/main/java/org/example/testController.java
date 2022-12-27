@@ -19,7 +19,7 @@ public class testController {
     private SinkService sinkService;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    public ObjectMapper objectMapper;
     public testController(SinkService sinkService){
         this.sinkService=sinkService;
     }
