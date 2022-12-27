@@ -1,18 +1,10 @@
 package org.example;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.messaging.handler.annotation.SendTo;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.util.HtmlUtils;
-import reactor.core.publisher.Sinks;
-
-import java.time.Duration;
 
 /**
  * ----------------------*    Norden Communication    *-------------------------
@@ -22,18 +14,24 @@ import java.time.Duration;
  **/
 @RestController
 public class testController {
-    @Autowired
-    private Sinks.Many<String> sink;
+    private SinkService sinkService;
+    public testController(SinkService sinkService){
+        this.sinkService=sinkService;
+    }
 
     @RequestMapping(method= RequestMethod.POST,value="/panic/id")
     public ResponseEntity<Boolean> mapp(@RequestBody Event event) throws Exception {
         System.out.println("received panic event.........."+event.altitude+"  "+event.latitude+"  "+event.originId);
         try {
             String name="";
-            if("0000fef3-0000-1000-8000-00805f9b34fb".equals(event.originId)){
+            if("BC:57:29:00:BA:A6".equals(event.originId)){
                 name="Mani E R";
             }else if("BC:57:29:00:B8:F6".equals(event.originId)){
                 name="Arun";
+            }else if("BC:57:29:00:B8:D1".equals(event.originId)){
+                name="Amol K R";
+            }else if("BC:57:29:00:B8:C3".equals(event.originId)){
+                name="Sarath Prem";
             }else{
                 name=event.originId;
             }
@@ -45,7 +43,7 @@ public class testController {
                 // json="\"{ lat: -25.363, lng: 131.044 }\"";
 
                 try{
-                    sink.emitNext(json, Sinks.EmitFailureHandler.busyLooping(Duration.ofMillis(100)));
+                    sinkService.emitToSink(json);
                 }catch (Exception ee){
                     //
                 }
