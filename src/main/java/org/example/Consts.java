@@ -8,7 +8,7 @@ package org.example;
  **/
 public class Consts {
 
-    public static final  String HTML_CLIENT=  " <!DOCTYPE html>\n" +
+    public static final  String HTML_CLIENT= " <!DOCTYPE html>\n" +
             "<html>\n" +
             "\t<body>\n" +
             "\n" +
@@ -18,33 +18,45 @@ public class Consts {
             "\n" +
             "\t\t<script>\n" +
             "\n" +
-            "\t\tvar map;\n" +
-            "\t\tfunction myMap() {\n" +
-            "\t\t\tvar mapProp= {\n" +
-            "\t\t\t  center:new google.maps.LatLng(51.508742,-0.120850),\n" +
-            "\t\t\t  zoom:5,\n" +
-            "\t\t\t};\n" +
-            "\t\t\tmap = new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);\n" +
-            "\t\t}\n" +
+            "\t\t\tvar map;\n" +
+            "\t\t\tfunction myMap() {\n" +
+            "\t\t\t\tvar mapProp= {\n" +
+            "\t\t\t\t  center:new google.maps.LatLng(51.508742,-0.120850),\n" +
+            "\t\t\t\t  zoom:2,\n" +
+            "\t\t\t\t};\n" +
+            "\t\t\t\tmap = new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);\n" +
+            "\t\t\t}\n" +
             "\n" +
             "\n" +
             "\n" +
-            "\t\t   var marker;\n" +
+            "\t\t   var markerMapData= new Map();\n" +
+            "\t\t   \n" +
+            "\n" +
             "\t\t   function addMarker(lat,lng,title) {\n" +
-            "events(\"add marker data:\"+lat+\"  ---  \"+lng+\"    \"+title);\n" +
+            "\t\t\tevents(\"add marker data:\"+lat+\"  ---  \"+lng+\"    \"+title);\n" +
+            "\t\t\tvar idSpec=\"lt\"+lat+\"ln\"+lng+\"tt\"+title\n" +
             "\n" +
-            "\t\t\tmarker = new google.maps.Marker({\n" +
-            "\t\t\t    position: new google.maps.LatLng(lat,lng),\n" +
-            "\t\t\t    map: map,\n" +
-            "\t\t\t    title: title,\n" +
-            "\t\t\t    label: {\n" +
-            "\t\t\t\t\t    text: title,\n" +
-            "\t\t\t\t\t    color: \"#1010ff\",\n" +
-            "\t\t\t\t\t    fontWeight: \"bold\",\n" +
-            "\t\t\t\t\t    fontSize: \"16px\",\n" +
-            "\t\t\t\t\t    className: \"map-label\"\n" +
-            "\t\t\t\t      }\n" +
-            "\t\t\t});\n" +
+            "\t\t\tif(markerMapData.has(idSpec)){\n" +
+            "\t\t\t\tmarkerMapData.get(idSpec).setPosition(new google.maps.LatLng(lat,lng));\n" +
+            "\t\t\t\t\n" +
+            "\t\t\t}else{\n" +
+            "\t\t\t\tmarkerMapData.set(idSpec,new google.maps.Marker({\n" +
+            "\t\t\t\t\t    position: new google.maps.LatLng(lat,lng),\n" +
+            "\t\t\t\t\t    map: map,\n" +
+            "\t\t\t\t\t    title: title,\n" +
+            "\t\t\t\t\t    label: {\n" +
+            "\t\t\t\t\t\t\t    text: title,\n" +
+            "\t\t\t\t\t\t\t    color: \"#1010ff\",\n" +
+            "\t\t\t\t\t\t\t    fontWeight: \"bold\",\n" +
+            "\t\t\t\t\t\t\t    fontSize: \"16px\",\n" +
+            "\t\t\t\t\t\t\t    className: \"map-label\"\n" +
+            "\t\t\t\t\t\t      }\n" +
+            "\t\t\t\t\t}));\n" +
+            "\n" +
+            "\t\t\t}\n" +
+            "\n" +
+            "\t\t\n" +
+            "\n" +
             "\t\t    }\n" +
             "\n" +
             "\t\t\t\n" +
@@ -52,7 +64,7 @@ public class Consts {
             "\n" +
             "\n" +
             "\n" +
-            "\t\t    var clientWebSocket = new WebSocket(\"ws://localhost:54321/event-emitter\");\n" +
+            "\t\t    var clientWebSocket = new WebSocket(\"ws://103.214.234.248:54321/event-emitter\");\n" +
             "\n" +
             "\t\t    clientWebSocket.onopen = function() {\n" +
             "\t\t\tconsole.log(\"clientWebSocket.onopen\", clientWebSocket);\n" +
