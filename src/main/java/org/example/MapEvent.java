@@ -9,14 +9,16 @@ package org.example;
  **/
 public class MapEvent {
 
-    public Position position;
     public String info;
     public String title;
+    double lat;
+    double lng;
 
     public MapEvent(String info,String title,double lat,double lng){
-        this.position=new Position(lat,lng);
         this.info=info;
         this.title=title;
+        this.lat=lat;
+        this.lng=lng;
     }
 
 }
