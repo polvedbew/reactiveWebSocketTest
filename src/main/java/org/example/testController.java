@@ -1,5 +1,6 @@
 package org.example;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class testController {
     private SinkService sinkService;
+    private ObjectMapper objectMapper=new ObjectMapper();
     public testController(SinkService sinkService){
         this.sinkService=sinkService;
     }
@@ -39,14 +41,15 @@ public class testController {
             //ObjectMapper mapper = new ObjectMapper();
             //String json = mapper.writeValueAsString(lo);
             try {
-                String json = "{ \"info\":\""+  "\n"
-                        +"Received time: "+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
-                        +"Received from: "+event.by_name
-                        +"Speed: "+event.speed
-                        +"Direction: "+event.bearing
-                        +"Gps time: "+event.gpsTime
-                        +"\" ,  \"title\":\"" + name + "\" , \"position\":{ \"lat\": " + Double.parseDouble(event.latitude) + ", \"lng\": " + Double.parseDouble(event.longitude) + " }}";
-                // json="\"{ lat: -25.363, lng: 131.044 }\"";
+                MapEvent me=new MapEvent("Received time: "+event.at_year_utc+"/"+event.at_month_utc+"/"+event.at_day_utc+"-"+event.at_hours_utc+":"+event.at_minutes_utc+":"+event.at_seconds_utc
+                        +"\\nReceived from: "+event.by_name
+                        +"\\nSpeed: "+event.speed
+                        +"\\nDirection: "+event.bearing
+                        +"\\nGps time: "+event.gpsTime
+                        , name
+                        , Double.parseDouble(event.latitude)
+                        ,Double.parseDouble(event.longitude));
+                String json= objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(me);
 
                 try{
                     sinkService.emitToSink(json);
